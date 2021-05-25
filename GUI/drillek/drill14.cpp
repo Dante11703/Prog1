@@ -50,7 +50,7 @@ try {
 	b.vf();
 	b.f();
 	cout << endl;
-	D1 d;
+	D1 d;		
 	d.vf();
 	d.f();
 	

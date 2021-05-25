@@ -3,16 +3,20 @@
 */
 
 
-#include "Lines_window.h"
-#include "Graph.h"
-#include "GUI.h"
+#include "../source/Lines_window.h"
+#include "../source/Graph.h"
+#include "../source/GUI.h"
 
 int main()
 {
-
-	using namespace Graph_lib;
-
-	Lines_window win{Point{100,100}, 1200, 600, "Vector_ref"};
-
+try {
+	Lines_window win{Point{100,100},1280,720,"Lines"};
 	return gui_main();
+} catch (exception& e){
+	cerr <<e.what() << endl;
+	return 1;
+}catch(...){
+	cerr << "Something went wrong!" <<endl;
+	return 2;
+}
 }

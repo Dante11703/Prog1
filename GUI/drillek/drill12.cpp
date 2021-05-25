@@ -73,7 +73,7 @@ try {
     txt.set_font_size(font_size);
 
     // kep
-    Image img{Point{100, 50}, "mememan.jpg"};
+    Image img{Point{100, 50}, "Rickroll.jpg"};
     // img.move(10, 10); miert nem megy?
 
     // kor
